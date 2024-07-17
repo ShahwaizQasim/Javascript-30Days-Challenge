@@ -42,4 +42,33 @@ number2 -= 4;
 
 /* Comparison Operator */
 
-console.log(8 > 7);
+console.log(8 > 7); // true
+console.log(7 < 5); // false
+
+console.log(8 >= 8); // true
+console.log(7 <= 8); // true
+
+console.log('8' == 8); // false
+console.log(8 === 8); // true
+
+
+/* Logical Operator */
+
+// dono condition true hogi tw condition true hogi
+console.log(9 > 8 && 9 > 10); // false
+console.log(7 < 8 && 10 >= 10); // true
+
+// dono condition me se koi ak true hogi tw condition true ho jaegi
+console.log(6 > 8 || 11 > 10); // true
+console.log(6 > 8 || 9 > 10); // false
+
+let a = 123;
+console.log('Not', !a);
+
+
+/* Ternory Operator */
+
+// write a program that uses the ternory operator to check if a number is positive or negative and log the result to the console
+let number1 = -1;
+let result = (number1 >= 0) ? 'The number is positive': 'The number is negative';
+console.log('result', result);
