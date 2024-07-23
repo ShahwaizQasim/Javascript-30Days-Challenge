@@ -28,7 +28,7 @@ const findMax = function(a,b){ // method 1
     console.log(`The maximum of ${a} and ${b} is ${max}`);
     return max;
 }
-// console.log(findMax(5,10));
+// console.log(findMax(20,10));
 
 const findMaxNum = function(a, b){
     if (a > b) {
@@ -63,10 +63,62 @@ const sumNum = (a , b) => {
 const containsCharacter = (a, b) => {
     return a.includes(b);
 }
-console.log( containsCharacter("hello","e"));
+// console.log( containsCharacter("hello","e"));
 
 
 /* Activity 4 : Function Perameters And Default Values */
+
+// task7
+const functionParameter = (para1, para2 = 2) => {
+     return para1 * para2;
+}
+// console.log(functionParameter(5, 5)); // 25
+// console.log(functionParameter(5)); // 10
+
+// task8
+const greet = (name, age = 10) => {
+    return `Hello ${name} your age is ${age}`;
+}  
+// console.log(greet("shahwaiz",21));
+// console.log(greet("shahwaiz"));
+
+
+/* Activity 5 : Higher-Order Functions  */
+
+// task9
+const RepeatFunction = (UserMessage, times) => {
+     for (let i = 0; i < times; i++) {
+        console.log(UserMessage);
+     }
+     return UserMessage;
+}
+
+// console.log(RepeatFunction("Hello Shahwaiz", 5));
+
+
+// // task10
+// function applyFunctions(fn1, fn2, value) {
+//     const firstResult = fn1(value);
+//     const finalResult = fn2(firstResult);
+//     return finalResult;
+// }
+
+// // Example usage:
+
+// // Define two simple functions
+// function double(x) {
+//     return x * 2;
+// }
+// // console.log('double', double());
+// function square(x) {
+//     return x * x;
+// }
+
+// // Apply double first, then square the result
+// const result = applyFunctions(double, square, 3);
+// console.log(result);  // Output: 36
+
+
 
 
 
