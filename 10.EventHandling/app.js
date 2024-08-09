@@ -85,8 +85,8 @@ form.addEventListener("submit", (event) => {
   console.log("userName", userName);
   console.log("email", email);
   console.log("password", password);
-});
 
+})
 
 /* Activity 5: Event Delegation */
 
@@ -105,7 +105,6 @@ const addItem = document.querySelector("#addItem");
 
 addItem.addEventListener("click", () => {
     const newItem = document.createElement('li');
-    
     newItem.innerText = `Item ${list.children.length + 1}`;
     list.appendChild(newItem);
 })
